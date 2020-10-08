@@ -31,7 +31,6 @@ describe('Round', () => {
 
   it('should return the current card being played', () => {
     round.returnCurrentCard();
-
     expect(round.returnCurrentCard()).to.deep.equal(card1);
   });
 
@@ -85,15 +84,5 @@ describe('Round', () => {
     round.calculatePercentCorrect();
 
     expect(round.calculatePercentCorrect()).to.equal(33);
-  });
-
-  it('should print a message when the round is over', () => {
-    round.takeTurn('stag');
-    round.takeTurn('invisibility cloak');
-    round.takeTurn('mimics');
-    round.calculatePercentCorrect();
-    round.endRound()
-
-    expect(round.endRound()).to.equal('**Round over!** You answered 33% of the questions correctly!');
   });
 })

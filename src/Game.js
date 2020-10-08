@@ -20,6 +20,7 @@ class Game {
     const deck = new Deck(theCards);
     this.currentRound = new Round(deck)
     const round = this.currentRound;
+    
 
     this.printMessage(deck, round);
     this.printQuestion(round)
