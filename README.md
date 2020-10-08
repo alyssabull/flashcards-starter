@@ -23,7 +23,7 @@ Complete 3 iterations that build the flashcard game by:
 - The game provides feedback once an answer is submitted indicating if the answer is correct or incorrect
 - Once all the questions are answered a message is displayed indicating the percentage of answers the user got correct
 
-![gif of website functionality]()
+![gif of website functionality](https://media.giphy.com/media/l3pRXFzODqN1mp5wLC/giphy.gif)
 
 ## Programming Languages Used
 
