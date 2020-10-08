@@ -25,7 +25,7 @@ describe('Turn', () => {
     expect(turn.guess).to.equal('stag');
   });
 
-  it('guess argument should be a string', () => {
+  it('should only take a string for the guess', () => {
     expect(turn.guess).to.be.a('string');
   });
 
