@@ -22,7 +22,7 @@ describe('Game', function() {
     card1 = new Card(1, 'What is Harry Potter\'s patronus?', ['horse', 'otter', 'stag'], 'stag');
     card2 = new Card(14, 'What does Dumbledore give Ron in his will?', ['deluminator', 'invisibility cloak', 'wand'], 'deluminator');
     card3 = new Card(12, 'What does the Imperius Curse do?', ['kills', 'controls', 'mimics'], 'controls');
-  })
+  });
 
 
   it('should be a function', function() {
@@ -33,13 +33,18 @@ describe('Game', function() {
     expect(game).to.be.an.instanceof(Game);
   });
 
+  // it('should have current round null by default', function() {
+  //   expect(game.currentRound).to.equal(null);
+  // });
+
   it('should keep track of the current round', function() {
+    game.start();
     expect(game.currentRound).to.be.an.instanceof(Round);
   });
 
-  it('should be able to create cards', function() {
-    game.start();
-    expect(game.deck).to.be.an('array');
-  })
+  // it('should create an array of cards when the game starts', function() {
+  //   game.start();
+  //   expect(game.start()).to.be.an.instanceof(Card);
+  // })
 
 });
